@@ -10,12 +10,29 @@ char* read_line();
 char** get_args();
 
 
-
-
-
-
 int main(){
 
+    shell_loop();
 
     return 0;
+}
+
+
+
+void shell_loop(){
+    do{
+        printf("\n:");
+        char* line = read_line();
+        char** args = get_args();
+    }while(1);
+}
+
+char* read_line(){
+
+    return "C";
+}
+
+char** get_args(){
+    char* args = malloc(sizeof(char) * 512);
+    return args;
 }
